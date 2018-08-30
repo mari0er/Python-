@@ -18,4 +18,4 @@ ImageDraw.Draw(im).text((w * 0.76,h * 0.02),'5',font = font,fill = 'white')
 # 第一个参数是坐标，第二个参数是文本绘制内容，第三个是字体对象
 
 im.show()	#展示绘制结果
-im.save('pci.bak.jpg')
+im.save('123.bak.jpg') #保存图片
