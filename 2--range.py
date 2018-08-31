@@ -15,3 +15,13 @@ for i in range(97, 123):
 myslist = random.sample(code_list, 8)	#数字8规定字符串的长度
 last_code = ''.join(myslist)
 print (last_code)
+
+
+#下面这个不是更简单吗？干嘛写那么多
+'''
+my_list = 'qwertyuiopasdfghjklzxcvbnm1234567890+_)(*&^%$#@!QAZWSXEDCRFVTGBYHNUJMIKLOPB'
+for i in range(20):
+	code = random.sample(my_list, 8)
+	my_code = ''.join(code)
+	print (my_code)
+'''
