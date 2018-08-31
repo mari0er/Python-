@@ -15,13 +15,13 @@ my_url = "https://www.mari0er.club"
 def get_doc_url():
 	result = {}
 	req = requests.get(my_url,headers = headers, verify = False)
-	soup = BeautifulSoup(req.text,"lxml")	#获得链接的网页源码
+	soup = BeautifulSoup(req.text,"lxml")	#获取链接的网页源码
 	#print (soup)
 	tmps = soup.find_all("div",class_ = "article-title")      #找到所有class等于article-title的div标签
 	for tmp in tmps:
 		title = (tmp.get_text()).strip()
-		url = (tmp.find_all('a')[0])['href']	#这里记录一下，heaf链接在div标签下的a标签中，所以有点麻烦  不能直接url = tmp.get('href')
-		result[title] = url 	#将标题和url连接存在字典中
+		url = (tmp.find_all('a')[0])['href']	#这里记录一下，heaf链接在div标签下的a标签中，所以有点麻烦 不能直接url = tmp.get('href')
+		result[title] = url 	#将标题和url链接存在字典中
 	return result
 	#print (result)
 
