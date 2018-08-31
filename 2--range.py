@@ -22,6 +22,5 @@ print (last_code)
 my_list = 'qwertyuiopasdfghjklzxcvbnm1234567890+_)(*&^%$#@!QAZWSXEDCRFVTGBYHNUJMIKLOPB'
 for i in range(20):
 	code = random.sample(my_list, 8)
-	my_code = ''.join(code)
-	print (my_code)
+	print (''.join(code))
 '''
