@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
 from PIL import Image, ImageDraw, ImageFont
-
 
 im = Image.open("123.jpg")	#创建图片对象 和代码在同一目录
 w,h = im.size	#获取图片的宽和高
