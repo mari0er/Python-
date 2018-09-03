@@ -4,7 +4,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-#自定义浏览器头
+#自定义浏览器头 
 headers = {
 	'Host': "www.mari0er.club",
     'User-Agent': "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:55.0) Gecko/20100101 Firefox/55.0"
