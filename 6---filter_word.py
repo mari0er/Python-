@@ -32,7 +32,6 @@ def main_0012():		#将敏感词语变成***
 			for i in range(len_new_str):
 				new_str += "*"
 			you_put = str(you_put).replace(filter_word,new_str)
-
 	print (you_put)
 
 if __name__ == '__main__':
